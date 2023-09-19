@@ -1,0 +1,51 @@
+/* 공통 스타일 */
+header .wrap nav div.wgnb {
+  width: 100%;
+}
+
+header .wrap nav div.wgnb > .wsub > div ul:hover {
+  background: rgba(1, 27, 245, .4);
+}
+
+header .wrap nav div.wgnb > .wsub > div ul li a:hover {
+  color: #0000FF;
+}
+
+header .wrap nav div.wgnb > .wsub > div ul li  a {
+  font-size: 13px;
+}
+
+header .wrap nav div.wgnb > .wsub:nth-child(2) > div ul li:nth-child(1), header .wrap nav div.wgnb > .wsub > div ul:nth-child(n+2) li {
+  line-height: 2;
+}
+
+header .wrap nav div.wgnb > .wsub:not(:first-child) > div ul:nth-child(n+1) li:nth-child(1) a, 
+header .wrap nav div.wgnb > .wsub:nth-child(1) > div ul:nth-child(n+2) li:nth-child(1) a
+{
+  color: #31ffe9;
+  font-size: 16px;
+}
+
+/* COMPANY */
+header .wrap nav div.wgnb > .wsub:nth-child(1) > div ul, header .wrap nav div.wgnb > .wsub:nth-child(2) > div ul {
+  width: calc(100% / 7);
+  text-align: center;
+}
+
+header .wrap nav div.wgnb > .wsub:nth-child(1) > div ul:not(:last-child), header .wrap nav div.wgnb > .wsub:nth-child(2) > div ul:not(:last-child) {
+   border-right: 1px solid #2a65fb;
+}
+
+header .wrap nav div.wgnb > .wsub:nth-child(1) > div ul:nth-child(1) li {
+  height: 100px;
+  line-height: 2;
+  
+}
+
+header .wrap nav div.wgnb > .wsub:nth-child(1) > div ul:nth-child(1) li a {
+  display: block;
+  height: 100%;
+  font-size: 15px;
+}
+
+/* SOCIAL & MEDIA */
