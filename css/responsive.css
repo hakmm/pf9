@@ -83,7 +83,7 @@
     }
     
 /*  sns   */
-    .snsani li {
+    #sns .snsani li {
         
     }
     
@@ -91,14 +91,25 @@
         display: none !important;
     }
     
+    #sns .slick-list {
+        padding: 0 !important;
+    }
+    
 /*  하단    */
     footer div.container ul.fnb {
-        display: flex;
-        flex-direction: column;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        place-items: center;
     }
     
     footer div.container ul.fnb li h2 {
         margin-bottom: 4.16vw;
+        text-align: unset;
+        margin-left: 15px;
+    }
+    
+    footer div.container ul.fnb li a {
+        font-size: 15px; 
     }
     
     footer div.container ul.fnb li:nth-child(1) ul.sub-list, footer div.container ul.fnb li:not(:first-child) ul.sub-list {
