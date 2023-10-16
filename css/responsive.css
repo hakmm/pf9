@@ -59,6 +59,7 @@
     
     #product ul.list li div p {
         color: #000;
+        margin-bottom: 0;
     }
     
     #product ul.list li div a {

@@ -1,13 +1,9 @@
-header {
-  
-}
-
 header .wrap {
   position: relative;
   
 }
 
-header .wrap nav {
+header .wrap nav.top-menu {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -16,7 +12,7 @@ header .wrap nav {
   
 }
 
-header .wrap nav h1 {
+header .wrap nav.top-menu h1 {
   height: 100%;
   width: 100%;
   display: flex;
@@ -24,7 +20,7 @@ header .wrap nav h1 {
   justify-content: center;
 }
 
-header .wrap nav h1::before{
+header .wrap nav.top-menu h1::before{
   content: "";  
   width: 30px;
   height: 30px;
@@ -32,12 +28,13 @@ header .wrap nav h1::before{
   background-repeat: no-repeat;
 }
 
-header .wrap nav h1 a {
+header .wrap nav.top-menu h1 a {
   color: #109ad6;
   height: 100%;
   line-height: 2;
 }
-header .wrap nav h1 a span {
+
+header .wrap nav.top-menu h1 a span {
   font-size: 0;
   width: 68px;
   height: 42px;
@@ -49,15 +46,13 @@ header .wrap nav h1 a span {
   background-position: center;
   margin-left: 15px;
 }
-header .wrap nav ul.gnb {
+
+header .wrap nav.top-menu ul.gnb {
   width: 70%;
   gap: 40px;
 }
-header .wrap nav ul.gnb li {
-  
-}
 
-header .wrap nav ul.gnb li a {
+header .wrap nav.top-menu ul.gnb li a {
   padding: 0 15px;
   line-height: 3;
   display: block;
@@ -66,22 +61,18 @@ header .wrap nav ul.gnb li a {
   font-weight: 400;
 }
 
-header .wrap nav ul.gnb li a:hover{
+header .wrap nav.top-menu ul.gnb li a:hover{
   border-bottom: 3px solid #2f90ff;
 }
 
 /* 기타메뉴 */
 
-header .wrap nav ul.enb {
+header .wrap nav.top-menu ul.enb {
   width: calc(30% - 55px);
   justify-content: end;
 }
 
-header .wrap nav ul.enb li {
-  
-}
-
-header .wrap nav ul.enb li a {
+header .wrap nav.top-menu ul.enb li a {
   padding: 0 9px;
   line-height: 2;
   display: inline-block;
@@ -89,11 +80,11 @@ header .wrap nav ul.enb li a {
   font-size: 13px;
 }
 
-header .wrap nav ul.enb li a:hover {
+header .wrap nav.top-menu ul.enb li a:hover {
   color: #2f90ff;
 }
 
-header .wrap nav ul.enb li:nth-child(1) a::after, header .wrap nav ul.enb li:nth-child(2) a::after, header .wrap nav ul.enb li:nth-child(3) a::after{
+header .wrap nav.top-menu ul.enb li:nth-child(1) a::after, header .wrap nav.top-menu ul.enb li:nth-child(2) a::after, header .wrap nav.top-menu ul.enb li:nth-child(3) a::after{
   content: "";
   border-right: 1px solid #666;
   height: 8px;
