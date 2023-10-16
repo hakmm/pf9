@@ -1,0 +1,95 @@
+header .wrap {
+  position: relative;
+  
+}
+
+header .wrap nav.top-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  flex-wrap: wrap;
+  
+}
+
+header .wrap nav.top-menu h1 {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header .wrap nav.top-menu h1::before{
+  content: "";  
+  width: 30px;
+  height: 30px;
+  background-image: url("../img/logo.png");
+  background-repeat: no-repeat;
+}
+
+header .wrap nav.top-menu h1 a {
+  color: #109ad6;
+  height: 100%;
+  line-height: 2;
+}
+
+header .wrap nav.top-menu h1 a span {
+  font-size: 0;
+  width: 68px;
+  height: 42px;
+  display: inline-block;
+  vertical-align: middle;
+  background-image: url(../img/logo.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-left: 15px;
+}
+
+header .wrap nav.top-menu ul.gnb {
+  width: 70%;
+  gap: 40px;
+}
+
+header .wrap nav.top-menu ul.gnb li a {
+  padding: 0 15px;
+  line-height: 3;
+  display: block;
+  border-bottom: 3px solid transparent;
+  font-size: 17px;
+  font-weight: 400;
+}
+
+header .wrap nav.top-menu ul.gnb li a:hover{
+  border-bottom: 3px solid #2f90ff;
+}
+
+/* 기타메뉴 */
+
+header .wrap nav.top-menu ul.enb {
+  width: calc(30% - 55px);
+  justify-content: end;
+}
+
+header .wrap nav.top-menu ul.enb li a {
+  padding: 0 9px;
+  line-height: 2;
+  display: inline-block;
+  position: relative;
+  font-size: 13px;
+}
+
+header .wrap nav.top-menu ul.enb li a:hover {
+  color: #2f90ff;
+}
+
+header .wrap nav.top-menu ul.enb li:nth-child(1) a::after, header .wrap nav.top-menu ul.enb li:nth-child(2) a::after, header .wrap nav.top-menu ul.enb li:nth-child(3) a::after{
+  content: "";
+  border-right: 1px solid #666;
+  height: 8px;
+  display: inline-block;
+  position: absolute;
+  right: 0;
+  top: calc(50% - 3px);
+}
