@@ -19,6 +19,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&display=swap" rel="stylesheet">  
 
+    <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+
     <script src="https://code.jquery.com/jquery-3.7.0.min.js" type="text/javascript"></script>
     <script type="text/javascript">
         $(document).ready(function(){
@@ -31,6 +33,8 @@
             $(".wsub").mouseleave(function(){
                 $(".wsub").slideUp();
             });
+
+            $(".wsub").hide();
 
             $('.titleani').slick({
                 dots:true,
@@ -104,7 +108,7 @@
     <!-- 상단영역 -->
     <header id="top">
         <div class="conatainer wrap">
-            <nav>
+            <nav class="top-menu">
                 <h1 class="h5">
                     <a href="" class="a">하이트진로</a>
                 </h1>
@@ -128,7 +132,6 @@
                     <li><a href="" class="a">RECRUIT</a></li>
                     <li><a href="" class="a">LANGUAGE</a></li>
                 </ul>
-                
                 <div class="ham">
                     <button class="toggle-menu">
                         <span></span>
@@ -264,7 +267,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="wsub hide">
+                <div class="wsub">
                     <h2 class="hide">SOCIAL & MEDIA</h2>
                     <div class="flex flex-center">
                         <ul>
@@ -309,7 +312,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="wsub hide">
+                <div class="wsub">
                     <h2 class="hide">ESG</h2>
                     <div class="flex flex-between">
                         <ul>
@@ -412,7 +415,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="wsub hide">
+                <div class="wsub">
                     <h2 class="hide">CUSTOMER CENTER</h2>
                     <div class="flex flex-center">
                         <ul>
